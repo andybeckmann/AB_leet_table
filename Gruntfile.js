@@ -32,37 +32,6 @@ module.exports = function(grunt) {
             }
         },
         
-        // -- Javscript Hints
-
-        jshint: {
-            options: {
-                eqnull: true,
-                eqeqeq: false,
-            },
-            beforeconcat: ['js/plugins.js','js/scripts.js']
-        },
-
-        // -- Javascript Concatenation
-
-        concat: {   
-            dist: {
-                src: [
-                    'js/plugins.js',
-                    'js/scripts.js'
-                ],
-                dest: 'js/build/global.js',
-            }
-        },
-
-        // -- Javascript Minification
-
-        uglify: {
-            build: {
-                src: 'js/build/global.js',
-                dest: 'js/build/global.min.js'
-            }
-        },
-
         // -- Watch
 
         watch: {
@@ -90,5 +59,5 @@ module.exports = function(grunt) {
 
     require('load-grunt-tasks')(grunt);
  
-    grunt.registerTask('default', ['jshint:beforeconcat','concat', 'uglify', 'sass', 'cssmin', 'watch']);
+    grunt.registerTask('default', ['sass', 'cssmin', 'watch']);
 };
