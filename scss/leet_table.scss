@@ -1,0 +1,87 @@
+table#leet_table {
+
+	width: 100%;
+	padding: 0;
+	border-collapse: collapse;
+
+	th {
+		background: #222;
+		color: #fff;
+		padding: 15px 20px;
+		text-align: left;
+		display: none;
+
+		@media (min-width: 769px) {
+			display: table-cell;
+		}
+	}
+
+	td {
+		background: #ccc;
+		padding: 15px 20px;
+		display: block;
+		width: 100%;
+
+		@media (min-width: 769px) {
+			width: auto;
+			display: table-cell;
+		}
+	}
+
+	td:before { 
+		content: attr(data-title);
+		font-weight: bold;
+		background: #222;
+		color: #fff;
+		border-bottom: 2px solid #222;
+		
+		padding: 15px 20px;
+		margin: -15px 15px -15px -20px;
+
+		@media (min-width: 769px) {
+			content: ""; 
+			padding: 0;
+			margin: 0;
+			
+		}
+	}
+
+	td:last-child{
+		border-bottom: 2px solid #999;
+
+		@media (min-width: 769px) {
+			border-bottom: none;
+		}
+	}
+
+		tr:last-child td:last-child {
+		border-bottom: none;
+	}
+
+	tr:nth-child(even) td:nth-child(even) {
+
+		background: #ddd;
+
+		@media (min-width: 769px) {
+			background: #ccc;
+		}
+	}
+
+	tr:nth-child(odd) td:nth-child(odd) {
+
+		background: #ddd;
+
+		@media (min-width: 769px) {
+			background: #ddd;
+		}
+	}
+
+	tr:nth-child(odd) td {
+		background: #ccc;
+
+		@media (min-width: 769px) {
+			background: #ddd;
+		}
+	}
+
+}
