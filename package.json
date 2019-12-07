@@ -1,5 +1,5 @@
 {
-  "name": "AB_leet_tables",
+  "name": "AB_leet_table",
   "version": "1.0.0",
   "description": "A leet html table solution for small screens",
   "author": {
@@ -7,6 +7,7 @@
     "email": "contact@andybeckmann.com",
     "url": "https://www.andybeckmann.com"
   },
+  "repository": "github:andybeckmann/AB_leet_table",
   "license": "MIT",
   "private": true,
   "devDependencies": {
