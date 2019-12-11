@@ -20,7 +20,7 @@
 			}
 
 			// Set data-title attribute on current data item using the textContent from the table headers
-			document.getElementsByClassName("data")[i].setAttribute('data-title', document.getElementsByClassName("header")[headerIndex].textContent);
+			data[i].setAttribute('data-title', headers[headerIndex].textContent);
 
 			// Increase headerIndex
 			headerIndex++;
