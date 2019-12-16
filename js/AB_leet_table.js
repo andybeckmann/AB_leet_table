@@ -4,7 +4,7 @@
  * 
  * leetTable() sets data-title attribute for data items containing header text
  *
- * @param {string} id - Element ID
+ * @param {string} id - DOM element ID
  */
 
 function leetTable(id) {
