@@ -1,70 +1,98 @@
 * {
   box-sizing: border-box;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
 
 body {
   padding: 20px 35px;
-  font-family: sans-serif; }
+  font-family: sans-serif;
+}
 
 table {
-  max-width: 960px; }
+  max-width: 960px;
+}
 
+/**
+ * AB_leet_table
+ * version: 1.0.0
+ */
 table#leet_table {
   width: 100%;
   padding: 0;
-  border-collapse: collapse; }
+  border-collapse: collapse;
+}
+table#leet_table th {
+  background: #222;
+  color: #fff;
+  padding: 15px 20px;
+  text-align: left;
+  display: none;
+}
+@media (min-width: 769px) {
   table#leet_table th {
-    background: #222;
-    color: #fff;
-    padding: 15px 20px;
-    text-align: left;
-    display: none; }
-    @media (min-width: 769px) {
-      table#leet_table th {
-        display: table-cell; } }
+    display: table-cell;
+  }
+}
+table#leet_table td {
+  background: #ccc;
+  padding: 15px 20px;
+  display: block;
+  width: 100%;
+}
+@media (min-width: 769px) {
   table#leet_table td {
-    background: #ccc;
-    padding: 15px 20px;
-    display: block;
-    width: 100%; }
-    @media (min-width: 769px) {
-      table#leet_table td {
-        width: auto;
-        display: table-cell; } }
+    width: auto;
+    display: table-cell;
+  }
+}
+table#leet_table td:before {
+  content: attr(data-title);
+  font-weight: bold;
+  background: #222;
+  color: #fff;
+  border-bottom: 2px solid #222;
+  padding: 15px 20px;
+  margin: -15px 15px -15px -20px;
+}
+@media (min-width: 769px) {
   table#leet_table td:before {
-    content: attr(data-title);
-    font-weight: bold;
-    background: #222;
-    color: #fff;
-    border-bottom: 2px solid #222;
-    padding: 15px 20px;
-    margin: -15px 15px -15px -20px; }
-    @media (min-width: 769px) {
-      table#leet_table td:before {
-        content: "";
-        padding: 0;
-        margin: 0; } }
+    content: "";
+    padding: 0;
+    margin: 0;
+  }
+}
+table#leet_table td:last-child {
+  border-bottom: 2px solid #999;
+}
+@media (min-width: 769px) {
   table#leet_table td:last-child {
-    border-bottom: 2px solid #999; }
-    @media (min-width: 769px) {
-      table#leet_table td:last-child {
-        border-bottom: none; } }
-  table#leet_table tr:last-child td:last-child {
-    border-bottom: none; }
+    border-bottom: none;
+  }
+}
+table#leet_table tr:last-child td:last-child {
+  border-bottom: none;
+}
+table#leet_table tr:nth-child(even) td:nth-child(even) {
+  background: #ddd;
+}
+@media (min-width: 769px) {
   table#leet_table tr:nth-child(even) td:nth-child(even) {
-    background: #ddd; }
-    @media (min-width: 769px) {
-      table#leet_table tr:nth-child(even) td:nth-child(even) {
-        background: #ccc; } }
+    background: #ccc;
+  }
+}
+table#leet_table tr:nth-child(odd) td:nth-child(odd) {
+  background: #ddd;
+}
+@media (min-width: 769px) {
   table#leet_table tr:nth-child(odd) td:nth-child(odd) {
-    background: #ddd; }
-    @media (min-width: 769px) {
-      table#leet_table tr:nth-child(odd) td:nth-child(odd) {
-        background: #ddd; } }
+    background: #ddd;
+  }
+}
+table#leet_table tr:nth-child(odd) td {
+  background: #ccc;
+}
+@media (min-width: 769px) {
   table#leet_table tr:nth-child(odd) td {
-    background: #ccc; }
-    @media (min-width: 769px) {
-      table#leet_table tr:nth-child(odd) td {
-        background: #ddd; } }
-
-/*# sourceMappingURL=main.css.map */
+    background: #ddd;
+  }
+}

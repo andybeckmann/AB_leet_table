@@ -1,17 +1,5 @@
-///////////////
-// main.scss //
-///////////////
+// Global styles
+@use 'global';
 
-* {
-	box-sizing: border-box;
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
-}
-
-body {
-	padding: 20px 35px;
-	font-family: sans-serif;
-}
-
-table {
-	max-width: 960px;
-}
+// AB_leet_table
+@use 'components/AB_leet_table';
