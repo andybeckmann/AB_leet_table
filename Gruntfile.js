@@ -56,11 +56,12 @@ module.exports = function(grunt) {
 
         // -- Javascript Minification
 
-        rollup: {
-            options: {},
-            files: {
-              'js/build/global.min.js': ['js/build/global.js'],
-            },
+        terser: {
+            main: { 
+                files: { 
+                    'js/build/global.min.js': ['js/build/global.js'], 
+                }
+            }
         },
 
         // -- Watch
@@ -69,7 +70,7 @@ module.exports = function(grunt) {
  
             scripts: {
                 files: ['js/*.js'],
-                tasks: ['jshint:beforeconcat','concat','uglify'],
+                tasks: ['jshint:beforeconcat','concat','grunt-terser'],
                 options: {
                     spawn: false,
                 }
@@ -90,5 +91,5 @@ module.exports = function(grunt) {
 
     require('load-grunt-tasks')(grunt);
  
-    grunt.registerTask('default', ['jshint:beforeconcat','concat', 'rollup', 'dart-sass', 'cssmin', 'watch']);
+    grunt.registerTask('default', ['jshint:beforeconcat','concat', 'terser', 'dart-sass', 'cssmin', 'watch']);
 };
