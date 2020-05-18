@@ -30,7 +30,7 @@ table#leet_table th {
   }
 }
 table#leet_table td {
-  background: #ccc;
+  background: #eee;
   padding: 15px 20px;
   display: block;
   width: 100%;
@@ -73,7 +73,7 @@ table#leet_table tr:nth-child(even) td:nth-child(even) {
 }
 @media (min-width: 769px) {
   table#leet_table tr:nth-child(even) td:nth-child(even) {
-    background: #ccc;
+    background: #eee;
   }
 }
 table#leet_table tr:nth-child(odd) td:nth-child(odd) {
@@ -85,7 +85,7 @@ table#leet_table tr:nth-child(odd) td:nth-child(odd) {
   }
 }
 table#leet_table tr:nth-child(odd) td {
-  background: #ccc;
+  background: #eee;
 }
 @media (min-width: 769px) {
   table#leet_table tr:nth-child(odd) td {

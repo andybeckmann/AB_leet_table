@@ -22,7 +22,7 @@ table#leet_table {
 	}
 
 	td {
-		background: #ccc;
+		background: #eee;
 		padding: 15px 20px;
 		display: block;
 		width: 100%;
@@ -68,7 +68,7 @@ table#leet_table {
 		background: #ddd;
 
 		@media (min-width: 769px) {
-			background: #ccc;
+			background: #eee;
 		}
 	}
 
@@ -82,7 +82,7 @@ table#leet_table {
 	}
 
 	tr:nth-child(odd) td {
-		background: #ccc;
+		background: #eee;
 
 		@media (min-width: 769px) {
 			background: #ddd;
